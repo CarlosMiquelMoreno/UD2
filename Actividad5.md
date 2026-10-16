@@ -41,6 +41,9 @@
 | 12 | Una web idéntica a la del ERP a la que se llega porque el DNS ha sido manipulado | Pharming | No | Si |
 | 13 | Un programa que registra sin permiso los hábitos de navegación y los vende | Spyware | No | No |
 
+Pregunta A: ¿Cuáles de estos incidentes no son "malware" propiamente dicho, sino fraude o ingeniería social? ¿Por qué un antivirus no los detendría?
+Serian la 10/11/12, porque, por que no es como tal un archivo o un ejecutable malo, son al final gente que te intenta engañar, asi los antivirus no los pueden rastrear.
+
 
 
 
