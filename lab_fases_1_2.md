@@ -14,7 +14,7 @@ Basándonos en la suposición de trabajo de que este servidor solo debe ofrecer 
 | **22** | SSH | Sí | Mantener abierto |
 | **23** | Telnet | No | Apagar / Desactivar |
 | **25** | SMTP (Correo) | No | Apagar / Desactivar |
-| **80** | HTTP (Web) | Sí | **Mantener abierto |
+| **80** | HTTP (Web) | Sí | Mantener abierto |
 | **512** | Rexec / Rlogin | No | Apagar / Desactivar |
 
 ### 2. Contramedidas aplicadas
