@@ -62,6 +62,40 @@ Conviene por que dicho en la fase 4 lo que quiere hacer el atacante es pasar des
 
 Parte C · Verificar una descarga: hash y firma
 
+C1. Descarga:
 
+mkdir -p ~/verif && cd ~/verif
+wget https://ftp.gnu.org/gnu/hello/hello-2.12.1.tar.gz
+wget https://ftp.gnu.org/gnu/hello/hello-2.12.1.tar.gz.sig
+wget https://ftp.gnu.org/gnu/gnu-keyring.gpg
 
+C2. Calculad el hash:
 
+<img width="807" height="45" alt="image" src="https://github.com/user-attachments/assets/33d24350-8265-49a1-bf63-b39a69b0fc18" />
+
+C3. Verificad la firma usando la lista de claves de GNU:
+
+<img width="772" height="180" alt="Captura de pantalla 2026-10-22 161651" src="https://github.com/user-attachments/assets/d3c93ddd-4c6a-4415-8d07-c43617ae87aa" />
+Esta es la firma que nos ha dado.
+
+C4. El experimento: ¿qué pasa si alguien toca el fichero? Haced una copia y añadid un carácter:
+
+<img width="810" height="92" alt="image" src="https://github.com/user-attachments/assets/09ee6c2b-fdd8-4428-85dc-b820571ce75d" />
+Al haber cambiado, sabe que no es la que se utilizó antes.
+
+C5. Pregunta C: completad:
+
+| Situación | ¿Basta con el hash? | ¿Hace falta la firma? ¿Por qué? |
+| --------- | ------------------- | ------------------------------- |
+| El fichero se corrompió al descargarlo | Si | No, con que el archivo se corrompa, el hash ya cambia. |
+| Un atacante cambió el fichero y el hash publicado en la misma web | No | Si, ya que si cambia el hash el atacante y lo pone para que le de el ok. |
+| Descargas desde un espejo (mirror) que no es de confianza | No | Si, al no ser de confianza el hash puede estar alterado para que pase desapercibido. |
+
+Parte D · Política de actualizaciones para Torrent
+
+La política de seguridad sería así.
+- Cada mes 1 socio se encargara de aplicar las actualizaciones de seguridad cada fin de semana.
+- Los parches del ERP y el servidor de impresión se probaran en entornos aislados antes de ponerlos.
+- Las actualizaciones automáticas no se utilizaran para evitar las caídas inecesarias del servidor.
+- Solo se instalara software de repositorios oficiales y tiene que ser autorizado por los 3 socios.
+- Todo equipo que haya superado su (EOL) se cambiara en un máximo de 30 días.
