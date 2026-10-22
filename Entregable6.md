@@ -99,3 +99,10 @@ La política de seguridad sería así.
 - Las actualizaciones automáticas no se utilizaran para evitar las caídas inecesarias del servidor.
 - Solo se instalara software de repositorios oficiales y tiene que ser autorizado por los 3 socios.
 - Todo equipo que haya superado su (EOL) se cambiara en un máximo de 30 días.
+
+Debate: actualizar automáticamente reduce el riesgo de que Torrent esté desactualizado, pero una actualización puede romper el ERP un viernes por la tarde. ¿Qué ganáis y qué perdéis con cada opción?
+
+Con la primera te despreocupas un poco de estar atento a las actus, pero te puede pasar el ejemplo que
+nos esta dando, el de que por una actu se rompa el ERP un viernes y durante todo el finde no pueda dar servicio.
+
+Con la otra es alreves, estas mas tiempo con las actus pero puedes predecir errores para que no te deje el servidor caído.
